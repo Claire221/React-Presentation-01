@@ -1,8 +1,28 @@
 /* Custom Styles */
+/* Universal Styles */
 .container {
   width: 100vw;
-  border: solid 2px red;
+
 }
+
+.active {
+  text-decoration: underline;
+  background-color: coral;
+}
+
+/* Navbar Styles */
+div.navbar.container {
+  color: red;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: black;
+}
+
 
 /* Default Styles */
 .App {

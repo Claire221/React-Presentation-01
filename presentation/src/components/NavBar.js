@@ -1,23 +1,34 @@
-import React, {useState} from "react";
-import {Navigate} from "react-router-dom";
+import React from "react";
+import { Link, useMatch, useResolvedPath } from "react-router-dom"
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-import Info from './Info'
-
-function NavBar() {
-    const [show, setShow] = React.useState(true)
-
+export default function MyComponent() {
     return (
-        <div className="container">
-            <button onClick={() => setShow(true)}>Show</button>
-            <button onClick={() => setShow(false)}>Hide</button>
-            { show? <h1>Hello</h1> : <h1>goodbye</h1>}
-
-            <button>About</button>
-            <button>Apprenticeship</button>
-            <button>Bootcamp</button>
-            <button>Projects</button>
-        </div>
+        <Navbar bg="light" expand="lg" className="justify-content-center">
+            <Container >
+                <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                <Navbar.Collapse id="basic-navbar-nav">
+                <Nav className="me-auto navbar">
+                    <Link to="/about" className="nav-link">About</Link>
+                    <Link to="/projects" className="nav-link">Projects</Link>
+                </Nav>
+                </Navbar.Collapse>
+            </Container>
+        </Navbar>
     );
 }
 
-export default NavBar
+function CustomLink( {to, children} ) {
+    const resolvedPath = useResolvedPath(to)
+    const isActive = useMatch({ path: resolvedPath.pathname, end: true})
+
+    return(
+        <li className={isActive ? "active" : ""}>
+            <Link to={to}>{children}</Link>
+        </li>
+    )
+}
