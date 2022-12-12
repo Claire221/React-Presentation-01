@@ -5,11 +5,15 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
+import { motion } from 'framer-motion';
+
 export default function Projects() {
     const [project1, showProject1] = useState(null)
     const [project2, showProject2] = useState(null)
     const [project3, showProject3] = useState(null)
+
     return (
+
         <Container className="flex container">
             <h1>Projects</h1>
             <Row className="flex projects-row ">

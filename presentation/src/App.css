@@ -1,5 +1,14 @@
 /* Custom Styles */
 /* Universal Styles */
+
+.section {
+  border: solid 2px purple;
+  width: 95% !important;
+  height: 40vh !important;
+  margin: 1% auto;
+
+}
+
 .container {
   width: 100vw;
   flex-direction: column;
@@ -33,11 +42,13 @@ div.navbar.container {
   width: 100%;
   margin: 2% auto;
   justify-content: space-between !important;
+  border: solid 2px red;
 }
 
 .projects-col {
-  width: 30% !important;
+
   flex-direction: column;
+
 }
 
 .project-btn {
@@ -47,6 +58,14 @@ div.navbar.container {
 .project-card {
   border-radius: 5px;
   border: solid 4px teal !important;
+}
+
+
+.card {
+  width: 80%;
+  border: solid 2px black;
+  border-radius: 10px;
+  box-shadow: 3px 5px 10px 2px #616161;
 }
 
 /* Default Styles */

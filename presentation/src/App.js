@@ -1,9 +1,11 @@
 
 import './App.css';
 import Navbar from './components/NavBar';
+import Header from './pages/Header';
 import About from './pages/About';
 import Projects from './pages/Projects';
-import Info from './pages/Info';
+import Skills from './pages/Skills';
+import ProjectCards from './pages/ProjectCards';
 import {Route, Routes} from "react-router-dom"
 
 function App() {
@@ -11,14 +13,18 @@ function App() {
   return (
     <>
       <Navbar/>
-
+      <Header/>
+      <About/>
+      <ProjectCards/>
+      <Skills/>
       <div className="container">
-          <Routes>
+          {/* <Routes>
             <Route path="/about" element ={<About />}/>
             <Route path="/projects" element ={<Projects />}/>
             <Route path="/info" element ={<Info />}/>
-          </Routes>
+          </Routes> */}
       </div>
+
     </>
   );
 }
