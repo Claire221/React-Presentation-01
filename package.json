@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "react-router-dom": "^6.4.5"
+    "react-router-dom": "^6.4.5",
+    "typewriter-effect": "^2.19.0"
   }
 }

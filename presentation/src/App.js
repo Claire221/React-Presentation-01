@@ -1,5 +1,6 @@
 
 import './App.css';
+
 import Navbar from './components/NavBar';
 import Header from './pages/Header';
 import About from './pages/About';
