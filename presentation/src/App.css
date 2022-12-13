@@ -12,13 +12,6 @@ body {
     height: 100% !important;
 }
 
-.section {
-  border: solid 2px purple;
-  width: 95% !important;
-  height: 95vh !important;
-  background-image: rgba(24, 24, 24, 0.5);
-}
-
 .container {
   width: 100vw;
   flex-direction: column;
@@ -30,11 +23,15 @@ body {
   align-items: center;
 }
 
-p {
+
+.section-styles {
+  width: 95% !important;
+  min-height: 95vh !important;
+  margin: 0 auto;
+  border: solid 3px rgb(0, 238, 255);
+  background: rgba(24, 24, 24, 0.5);
   font-family: 'Roboto', sans-serif;
 }
-
-
 
 /* Navbar Styles */
 /* div.navbar.container {
@@ -87,6 +84,60 @@ div .header-section .Typewriter {
   color: rgb(0, 87, 94);
 }
 
+/* About Page Styles */
+
+.about-title {
+  color: rgb(0, 238, 255);
+  margin: 2% auto;
+  font-size: 3.5rem;
+  text-align: center;
+}
+
+.about-col {
+  border: solid 3px rgb(0, 238, 255);
+  margin: 3% auto;
+  padding: 0 !important;
+}
+
+.about-image-div {
+  width: 40%;
+}
+
+.about-content-div {
+  width: 60%;
+  height: 100%;
+  flex-direction: column;
+  color: #fff;
+}
+
+.about-content-left {
+  background: linear-gradient(135deg, rgba(0, 238, 255, 0.2) 0%, rgba(0, 238, 255, 0.2) 61%, rgba(24, 24, 24, 0.5) 61%, rgba(24, 24, 24, 0.5) 100%);
+}
+
+.about-content-right {
+  background: linear-gradient(135deg, rgba(24, 24, 24, 0.5) 0%, rgba(24, 24, 24, 0.5) 61%, rgb(0, 238, 255) 61%, rgb(0, 238, 255) 100%);
+}
+
+.about-image {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.about-div-title {
+  font-size: 2.5rem;
+  margin: 2% auto;
+}
+
+.about-div-ul {
+  padding: 0;
+}
+
+.about-div-li {
+  list-style: none;
+  font-size: 1.25rem;
+  padding: 0;
+  margin: 2% 0;
+}
 
 /* Projects Page Styles */
 .projects-row {
