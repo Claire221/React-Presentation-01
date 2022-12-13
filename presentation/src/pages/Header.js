@@ -1,8 +1,10 @@
 import React from "react";
 import { motion } from 'framer-motion';
 import { useState } from 'react'
-// import Typewriter from 'typewriter-effect/dist/core';
+
 import Typewriter from "typewriter-effect";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 export default function Header() {
 
@@ -27,7 +29,10 @@ export default function Header() {
                 }}
                 
             />
-            <h1>About</h1>
+            <div className="header-links-div flex">
+                <FontAwesomeIcon icon={faGithub} className="header-link"/>
+                <FontAwesomeIcon icon={faLinkedin} className="header-link"/>
+            </div>
 
         </motion.div>
     );

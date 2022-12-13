@@ -51,6 +51,7 @@ p {
 
 /* Header Page Styles */
 .header-section {
+  flex-direction: column;
   margin: 0 auto;
   padding: 0;
   width: 100%;
@@ -67,6 +68,22 @@ div .header-section .Typewriter {
     font-size: 6rem !important;
     font-family: 'Cairo', sans-serif;
     z-index: 100;
+}
+
+.header-links-div {
+  width: 10%;
+  justify-content: space-around;
+}
+
+.header-link {
+  font-size: 3.75rem;
+  margin-top: 2%;
+  color: rgb(0, 238, 255);
+}
+
+.header-link:focus,
+.header-link:Hover {
+  color: rgb(0, 87, 94);
 }
 
 
