@@ -93,10 +93,26 @@ div .header-section .Typewriter {
 }
 
 /* About Page Styles */
+.about-section {
+  width: 100% !important;
+  margin-bottom: 5%;
+}
+
+.about-container.container {
+  margin: 0 auto;
+  padding: 0;
+  min-width: 100% !important;
+}
+
+.about-row.row{
+  max-width: 95% !important;
+  margin: 2% auto;
+  border: solid 3px rgb(0, 238, 255);
+  
+}
 
 .about-col {
-  border: solid 3px rgb(0, 238, 255);
-  margin: 3% auto;
+  /* border: solid 3px rgb(0, 238, 255); */
   padding: 0 !important;
 }
 
@@ -279,8 +295,9 @@ div .header-section .Typewriter {
 
 /* Test Project Styles */
 .tproject-row {
-  width: 100%;
+  width: 95%;
   margin: 0 auto;
+  border: solid 3px rgb(0, 238, 255);
 }
 
 .tproject-col-1 {

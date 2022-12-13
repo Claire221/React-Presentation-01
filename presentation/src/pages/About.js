@@ -10,9 +10,9 @@ import Col from 'react-bootstrap/Col';
 export default function About() {
 
     return (
-        <section className="my-5 about-section  section-styles">
-            <Container>
-                <h1 className="about-title">My Coding Journey</h1>
+        <section className="mt-5 mb-20 about-section">
+            <Container className="about-container">
+                <h1 className="section-title">My Coding Journey</h1>
                 <motion.div
                         initial="hidden"
                         whileInView="visible"
@@ -22,7 +22,7 @@ export default function About() {
                             visible: { opacity: 1, scale: 1 },
                             hidden: { opacity: 0, scale: 0 } }}
                         className="">
-                        <Row>
+                        <Row className="about-row">
                             <Col className="about-col flex">
                                 <div className="about-image-div flex">
                                     <img src="https://img.freepik.com/premium-vector/cartoon-urban-cityscape-with-college-academy-students-university-architecture-background_212168-968.jpg?w=2000" class="about-image" alt="Responsive image"></img>
@@ -49,7 +49,7 @@ export default function About() {
                         visible: { opacity: 1, scale: 1 },
                         hidden: { opacity: 0, scale: 0 } }}
                     className="">
-                        <Row>
+                        <Row className="about-row">
                             <Col className="about-col flex">
                                 <div className="about-content-div about-content-left flex">
                                     <p className="about-div-title">IT Apprenticeship</p>
@@ -76,7 +76,7 @@ export default function About() {
                         visible: { opacity: 1, scale: 1 },
                         hidden: { opacity: 0, scale: 0 } }}
                     className="">
-                    <Row>
+                    <Row className="about-row">
                         <Col className="about-col flex">
                             <div className="about-image-div flex">
                                 <img src="https://cdn5.vectorstock.com/i/1000x1000/27/84/programming-development-using-pc-and-it-technology-vector-36542784.jpg" class="about-image" alt="Responsive image"></img>
