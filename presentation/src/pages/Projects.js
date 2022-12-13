@@ -43,18 +43,18 @@ export default function ProjectTwo() {
 
         <section className="section-styles">
 
-            <Container className="flex container ">
+            <Container className="flex container projects-container">
                 <h1 className="section-title">Projects</h1>
                 <Row className="flex projects-row ">
                     <Col className="flex projects-col"><Button onClick={() => showProject1(!project1)} className="my-4 project-btn">Facility 443</Button></Col>
                     <Col className="flex projects-col"><Button onClick={() => showProject2(!project2)} className="my-4 project-btn">Bookmarked</Button></Col>
                     <Col className="flex projects-col"><Button onClick={() => showProject3(!project3)} className="my-4 project-btn">Across The Ages</Button></Col>
                 </Row>
-                <Row className="flex projects-row ">
+                <Row className="flex projects-row project-cards-row">
                     <Col className="flex projects-col">
                         {
                            project1?<Card className="project-card">
-                           <Carousel activeIndex={index} onSelect={handleSelect} interval={null}>
+                            <Carousel activeIndex={index} onSelect={handleSelect} interval={null}>
                                <Carousel.Item>
                                    <img
                                    className="d-block project-image"

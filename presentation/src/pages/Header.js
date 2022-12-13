@@ -17,7 +17,7 @@ export default function Header() {
             variants={{
                 visible: { opacity: 1, scale: 1 },
                 hidden: { opacity: 0, scale: 0 } }}
-            className="header-section flex">
+            className="header-section ">
 
             <Typewriter className="header-title"
                 onInit={(typewriter)=> {

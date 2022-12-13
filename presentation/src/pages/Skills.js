@@ -11,9 +11,9 @@ import Col from 'react-bootstrap/Col';
 
 export default function Skills() {
     return (
-        <section className="my-5 skills-section  section-styles">
-        <Container>
-            <h1 className="about-title">Coding Languages</h1>
+        <section className="section-styles">
+        <Container className="skills-container">
+            <h1 className="section-title">Coding Languages</h1>
             <motion.div
                     initial="hidden"
                     whileInView="visible"
@@ -22,7 +22,7 @@ export default function Skills() {
                     variants={{
                         visible: { opacity: 1, scale: 1 },
                         hidden: { opacity: 0, scale: 0 } }}
-                    className="">
+                    className="skills-div">
                     <Row>
                         <Col className="skills-col flex">
                              <div className="skills-content-div">

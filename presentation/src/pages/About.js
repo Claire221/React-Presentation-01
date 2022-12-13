@@ -10,7 +10,7 @@ import Col from 'react-bootstrap/Col';
 export default function About() {
 
     return (
-        <section className="mt-5 mb-20 about-section">
+        <section className="mt-5 mb-20 section-styles">
             <Container className="about-container">
                 <h1 className="section-title">My Coding Journey</h1>
                 <motion.div

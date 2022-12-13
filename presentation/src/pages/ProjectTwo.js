@@ -106,6 +106,74 @@ export default function Project2() {
                            </div>
                         </div>
                     </motion.div>
+
+                    <motion.div
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.3 }}
+                        variants={{
+                            visible: { opacity: 1, scale: 1 },
+                            hidden: { opacity: 0, scale: 0 } }}
+                        className="flex tproject-row">
+
+                        <div className="tproject-col-1">
+                            <Carousel activeIndex={index} onSelect={handleSelect} interval={null} className="tproject-carousel">
+                               <Carousel.Item>
+                                   <img
+                                   className="d-block tproject-image"
+                                   src={project2Image1}
+                                   alt="First slide"
+                                   />
+                               </Carousel.Item>
+                               <Carousel.Item>
+                                   <img
+                                   className="d-block tproject-image"
+                                   src={project2Image2}
+                                   alt="Second slide"
+                                   />
+                               </Carousel.Item>
+                               <Carousel.Item>
+                                   <img
+                                   className="d-block tproject-image"
+                                   src={project2Image3}
+                                   alt="Third slide"
+                                   />
+                               </Carousel.Item>
+                               <Carousel.Item>
+                                   <img
+                                   className="d-block tproject-image"
+                                   src={project2Image3}
+                                   alt="Fourth slide"
+                                   />
+                               </Carousel.Item>
+                           </Carousel>
+                        </div>
+
+                        <div className="tproject-col-2">
+                            <h3 className="project-title">Facility 443</h3>
+                           
+                           <h4 className="project-text"><span className="project-sub-title">Project Brief: </span>Create a website that includes an interactive JavaScript element.</h4>
+
+                           <h4 className="project-text"><span className="project-sub-title">Languages Used: </span>HTML, CSS, JavaScript</h4>
+
+                           <h4 className="project-sub-title">Project features</h4>
+                           <ListGroup variant="flush" className="project-card-list">
+                               <ListGroup.Item className="project-card-li">Background Music</ListGroup.Item>
+                               <ListGroup.Item className="project-card-li">Sound Effects</ListGroup.Item>
+                               <ListGroup.Item className="project-card-li">Interactive Storyline</ListGroup.Item>
+                               <ListGroup.Item className="project-card-li">Visual Inventory System</ListGroup.Item>
+                               <ListGroup.Item className="project-card-li">Checkpoint Systems</ListGroup.Item>
+                           </ListGroup>
+                           
+                           <h4 className="project-text"><span className="project-sub-title">Project Difficulties: </span>Button click events were bubbling</h4>
+                           
+                           <div className="project-card-links flex">
+                               <FontAwesomeIcon icon={faGithub} className="project-link"/>
+                               <FontAwesomeIcon icon={faDisplay} className="project-link"/>
+                           </div>
+                        </div>
+                    </motion.div>
         </section>    
     );
 }

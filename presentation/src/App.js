@@ -17,7 +17,7 @@ function App() {
       <Header/>
       <About/>
       <Skills/>
-      <ProjectTwo/>
+      <Projects/>
       <div className="container">
           {/* <Routes>
             <Route path="/about" element ={<About />}/>
