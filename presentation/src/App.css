@@ -31,6 +31,7 @@ body {
   border: solid 3px rgb(0, 238, 255);
   background: rgba(24, 24, 24, 0.5);
   font-family: 'Roboto', sans-serif;
+  color: #fff;
 }
 
 /* Navbar Styles */
@@ -138,6 +139,20 @@ div .header-section .Typewriter {
   padding: 0;
   margin: 2% 0;
 }
+
+/* Skills Page Styles */
+.skills-col {
+  width: 100%;
+  border: solid 2px palevioletred;
+}
+
+.skills-icon-div {
+  width: 60%;
+  height: 100%;
+  flex-direction: column;
+  border: solid 2px purple;
+}
+
 
 /* Projects Page Styles */
 .projects-row {
