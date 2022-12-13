@@ -28,7 +28,7 @@ import project3Image2 from "../images/ATA-02.jpg"
 import project3Image3 from "../images/ATA-03.jpg"
 import project3Image4 from "../images/ATA-04.jpg"
 
-export default function Projects() {
+export default function ProjectTwo() {
     const [project1, showProject1] = useState(null)
     const [project2, showProject2] = useState(null)
     const [project3, showProject3] = useState(null)
@@ -85,7 +85,7 @@ export default function Projects() {
                                </Carousel.Item>
                            </Carousel>
                            <Card.Body>
-                           <Card.Title className="project-title">Bookmarked</Card.Title>
+                           <Card.Title className="project-title">Facility 443</Card.Title>
                            
                            <Card.Title className="project-text"><span className="project-sub-title">Project Brief: </span>Create a website that includes an interactive JavaScript element.</Card.Title>
 
@@ -148,20 +148,22 @@ export default function Projects() {
                            <Card.Body>
                            <Card.Title className="project-title">Bookmarked</Card.Title>
                            
-                           <Card.Title className="project-text"><span className="project-sub-title">Project Brief: </span>Create a website that includes an interactive JavaScript element.</Card.Title>
+                           <Card.Title className="project-text"><span className="project-sub-title">Project Brief: </span>Create an application that has CRUD functionality</Card.Title>
 
-                           <Card.Title className="project-text"><span className="project-sub-title">Languages Used: </span>HTML, CSS, JavaScript</Card.Title>
+                           <Card.Title className="project-text"><span className="project-sub-title">Languages Used: </span>HTML, CSS, Python, Flask, Jinja, MongoDB, PostgreSQL, Heroku</Card.Title>
 
                            <Card.Title className="project-sub-title">Project features</Card.Title>
                            <ListGroup variant="flush" className="project-card-list">
-                               <ListGroup.Item className="project-card-li">Background Music</ListGroup.Item>
-                               <ListGroup.Item className="project-card-li">Sound Effects</ListGroup.Item>
-                               <ListGroup.Item className="project-card-li">Interactive Storyline</ListGroup.Item>
-                               <ListGroup.Item className="project-card-li">Visual Inventory System</ListGroup.Item>
-                               <ListGroup.Item className="project-card-li">Checkpoint Systems</ListGroup.Item>
+                               <ListGroup.Item className="project-card-li">Account Creation</ListGroup.Item>
+                               <ListGroup.Item className="project-card-li">Login and Logout</ListGroup.Item>
+                               <ListGroup.Item className="project-card-li">Create and Delete Bookshelves</ListGroup.Item>
+                               <ListGroup.Item className="project-card-li">Create, Edit and Delete Books</ListGroup.Item>
+                               <ListGroup.Item className="project-card-li">Assign Books to Bookshelves</ListGroup.Item>
+                               <ListGroup.Item className="project-card-li">Book Search</ListGroup.Item>
+                               <ListGroup.Item className="project-card-li">Book Generation</ListGroup.Item>
                            </ListGroup>
                            
-                           <Card.Title className="project-text"><span className="project-sub-title">Project Difficulties: </span>Button click events were bubbling</Card.Title>
+                           <Card.Title className="project-text"><span className="project-sub-title">Project Difficulties: </span></Card.Title>
                            
                            <div className="project-card-links flex">
                                <FontAwesomeIcon icon={faGithub} className="project-link"/>
@@ -207,19 +209,20 @@ export default function Projects() {
                                </Carousel.Item>
                            </Carousel>
                            <Card.Body>
-                           <Card.Title className="project-title">Bookmarked</Card.Title>
+                           <Card.Title className="project-title">Across the Ages - Project Ongoing</Card.Title>
                            
-                           <Card.Title className="project-text"><span className="project-sub-title">Project Brief: </span>Create a website that includes an interactive JavaScript element.</Card.Title>
+                           <Card.Title className="project-text"><span className="project-sub-title">Project Brief: </span>Create an E-Commerce website with payment functionality</Card.Title>
 
-                           <Card.Title className="project-text"><span className="project-sub-title">Languages Used: </span>HTML, CSS, JavaScript</Card.Title>
+                           <Card.Title className="project-text"><span className="project-sub-title">Languages Used: </span>HTML, CSS, Python, Django, Stripe</Card.Title>
 
                            <Card.Title className="project-sub-title">Project features</Card.Title>
                            <ListGroup variant="flush" className="project-card-list">
-                               <ListGroup.Item className="project-card-li">Background Music</ListGroup.Item>
-                               <ListGroup.Item className="project-card-li">Sound Effects</ListGroup.Item>
-                               <ListGroup.Item className="project-card-li">Interactive Storyline</ListGroup.Item>
-                               <ListGroup.Item className="project-card-li">Visual Inventory System</ListGroup.Item>
-                               <ListGroup.Item className="project-card-li">Checkpoint Systems</ListGroup.Item>
+                               <ListGroup.Item className="project-card-li">Login and Out Features</ListGroup.Item>
+                               <ListGroup.Item className="project-card-li">Prodcut Search</ListGroup.Item>
+                               <ListGroup.Item className="project-card-li">Product Display</ListGroup.Item>
+                               <ListGroup.Item className="project-card-li">You might also like</ListGroup.Item>
+                               <ListGroup.Item className="project-card-li">Add to Basket</ListGroup.Item>
+                               <ListGroup.Item className="project-card-li">Checkout</ListGroup.Item>
                            </ListGroup>
                            
                            <Card.Title className="project-text"><span className="project-sub-title">Project Difficulties: </span>Button click events were bubbling</Card.Title>
