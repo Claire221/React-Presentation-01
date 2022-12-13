@@ -10,50 +10,72 @@ import Col from 'react-bootstrap/Col';
 export default function About() {
 
     return (
-        <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            transition={{ duration: 0.3 }}
-            variants={{
-                visible: { opacity: 1, scale: 1 },
-                hidden: { opacity: 0, scale: 0 } }}
-            className="my-5 about-section  section-styles">
-
-                    <h1 className="about-title">My Coding Journey</h1>
-                    <Container>
-                    <Row>
-                        <Col className="about-col flex">
-                            <div className="about-image-div flex">
-                                <img src="https://img.freepik.com/premium-vector/cartoon-urban-cityscape-with-college-academy-students-university-architecture-background_212168-968.jpg?w=2000" class="about-image" alt="Responsive image"></img>
-                            </div>
-                            <div className="about-content-div about-content-right flex">
-                                <p className="about-div-title">Graduate University</p>
-                                <ul className="about-div-ul">
-                                    <li className="about-div-li">Graduated in 2018</li>
-                                    <li className="about-div-li">Unsure of what career to persue</li>
-                                    <li className="about-div-li">Started Looking at different careers in IT</li>
-                                    <li className="about-div-li">Came across Web Development</li>
-                                </ul>
-                            </div>
-                        </Col>
-                    </Row>
-                    <Row>
-                    <Col className="about-col flex">
-                            <div className="about-content-div about-content-left flex">
-                                <p className="about-div-title">IT Apprenticeship</p>
-                                <ul className="about-div-ul">
-                                    <li className="about-div-li">Learnt how to fix and install computers</li>
-                                    <li className="about-div-li">Learnt how to install networks</li>
-                                    <li className="about-div-li">Progressed onto a full time position</li>
-                                    <li className="about-div-li">Issue with training</li>
-                                </ul>
-                            </div>
-                            <div className="about-image-div flex">
-                                <img src="https://img.freepik.com/free-vector/flat-customer-support-illustration_23-2148899114.jpg" class="about-image" alt="Responsive image"></img>
-                            </div>
-                        </Col>
-                    </Row>
+        <section className="my-5 about-section  section-styles">
+            <Container>
+                <h1 className="about-title">My Coding Journey</h1>
+                <motion.div
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.3 }}
+                        variants={{
+                            visible: { opacity: 1, scale: 1 },
+                            hidden: { opacity: 0, scale: 0 } }}
+                        className="">
+                        <Row>
+                            <Col className="about-col flex">
+                                <div className="about-image-div flex">
+                                    <img src="https://img.freepik.com/premium-vector/cartoon-urban-cityscape-with-college-academy-students-university-architecture-background_212168-968.jpg?w=2000" class="about-image" alt="Responsive image"></img>
+                                </div>
+                                 <div className="about-content-div about-content-right flex">
+                                    <p className="about-div-title">Graduate University</p>
+                                    <ul className="about-div-ul">
+                                        <li className="about-div-li">Graduated in 2018</li>
+                                        <li className="about-div-li">Unsure of what career to persue</li>
+                                        <li className="about-div-li">Started Looking at different careers in IT</li>
+                                        <li className="about-div-li">Came across Web Development</li>
+                                    </ul>
+                                </div>
+                            </Col>
+                        </Row>
+                </motion.div>
+                
+                <motion.div
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true }}
+                     transition={{ duration: 0.3 }}
+                    variants={{
+                        visible: { opacity: 1, scale: 1 },
+                        hidden: { opacity: 0, scale: 0 } }}
+                    className="">
+                        <Row>
+                            <Col className="about-col flex">
+                                <div className="about-content-div about-content-left flex">
+                                    <p className="about-div-title">IT Apprenticeship</p>
+                                    <ul className="about-div-ul">
+                                        <li className="about-div-li">Learnt how to fix and install computers</li>
+                                        <li className="about-div-li">Learnt how to install networks</li>
+                                        <li className="about-div-li">Progressed onto a full time position</li>
+                                        <li className="about-div-li">Issue with training</li>
+                                    </ul>
+                                </div>
+                                <div className="about-image-div flex">
+                                    <img src="https://img.freepik.com/free-vector/flat-customer-support-illustration_23-2148899114.jpg" class="about-image" alt="Responsive image"></img>
+                                    </div>
+                            </Col>
+                        </Row>     
+                </motion.div>
+                
+                <motion.div
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.3 }}
+                    variants={{
+                        visible: { opacity: 1, scale: 1 },
+                        hidden: { opacity: 0, scale: 0 } }}
+                    className="">
                     <Row>
                         <Col className="about-col flex">
                             <div className="about-image-div flex">
@@ -68,9 +90,9 @@ export default function About() {
                             </div>
                         </Col>
                     </Row>
-                    </Container>
-
-        </motion.div>
+                </motion.div>
+            </Container>
+         </section>
 
         
     );
