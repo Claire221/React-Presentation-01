@@ -4,7 +4,7 @@
 
 /* Universal Styles */
 body {
-  background-image: linear-gradient(to bottom, rgba(253, 238, 234, 0), rgba(255, 251, 250, 0)),
+  background-image: linear-gradient(to bottom, rgba(24, 24, 24, 0.5), rgba(24, 24, 24, 0.5)),
     url("https://wallpaperaccess.com/full/4174801.jpg");
     background-repeat: repeat-y;
     background-position: bottom;
@@ -15,9 +15,8 @@ body {
 .section {
   border: solid 2px purple;
   width: 95% !important;
-  height: 50vh !important;
-  margin: 1% auto;  
-  background-image: linear-gradient(to bottom, rgba(24, 24, 24, 0.9), rgba(24, 24, 24, 0.9));
+  height: 95vh !important;
+  background-image: rgba(24, 24, 24, 0.5);
 }
 
 .container {
@@ -56,8 +55,8 @@ p {
   padding: 0;
   width: 100%;
   height: 100vh;
-  border: solid 3px rgb(0, 238, 255);
-  background-color: rgba(24, 24, 24, 0.8);
+  /* border: solid 3px rgb(0, 238, 255); */
+  background-image: linear-gradient(to bottom, rgba(24, 24, 24, 0.7) 70%, rgba(24, 24, 24, 0)) !important;
   justify-content: center !important;
 }
 
@@ -68,7 +67,9 @@ div .header-section .Typewriter {
     font-size: 6rem !important;
     font-family: 'Cairo', sans-serif;
     z-index: 100;
+    background-color: !important;
 }
+
 
 .header-links-div {
   width: 10%;
