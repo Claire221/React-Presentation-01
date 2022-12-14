@@ -5,10 +5,11 @@
 /* Universal Styles */
 body {
   background-image: linear-gradient(to bottom, rgba(24, 24, 24, 0.5), rgba(24, 24, 24, 0.5)),
-    url("./images/background02.jpg");
-  background-repeat: repeat-y;
+    url("./images/background-02.jpg");
+  background-repeat: no-repeat;
   background-position: bottom;
-  background-size: 100%;
+  background-size: cover;
+  /* background: linear-gradient(200deg, black 80%,  rgba(0, 238, 250, .5) 100%); */
   height: 100% !important;
   /* url("https://wallpaperaccess.com/full/4174801.jpg"); */
 }
@@ -30,6 +31,7 @@ body {
   background: rgba(24, 24, 24, 0.0);
   font-family: 'Roboto', sans-serif;
   color: #fff;
+
 }
 
 .section-title {
@@ -42,20 +44,17 @@ body {
   width: 100%;
   background-color: rgba(24, 24, 24, 0.9) !important;
   border: solid 3px rgb(255, 0, 212); 
-  box-shadow:0 0 20px rgb(0, 238, 255);
+  box-shadow: 10px 0 20px rgb(255, 0, 212),
+              20px 0 50px rgba(0, 238, 255, 0.5);
 }
 
-/* Navbar Styles */
-/* div.navbar.container {
-  display: flex !important;
-  justify-content: center !important;
-  align-items: center !important;
+.card-styles {
+  border-image: linear-gradient(rgb(0, 238, 255), rgba(24, 24, 24, 0.9)) 10;
+  border-width: 6px;
+  border-style: solid;
+  box-shadow: 3px 5px 10px rgba(0, 238, 255, 0.5);
+  background: rgba(24, 24, 24, 0.9);
 }
-
-.nav-link {
-  text-decoration: none;
-  color: black;
-} */
 
 /* Header Page Styles */
 .header-section {
@@ -64,26 +63,24 @@ body {
   padding: 0;
   width: 100%;
   height: 100vh;
-  /* border: solid 3px rgb(0, 238, 255); */
-  /* background-image: linear-gradient(to bottom, rgba(24, 24, 24, 0.7) 70%, rgba(24, 24, 24, 0)) !important; */
   justify-content: center !important;
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(24, 24, 24, 0.0)),
-    url("https://images.unsplash.com/photo-1546640646-89b557854b23?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80");
+    url("https://img.freepik.com/free-vector/abstract-neon-lights-background-design_52683-44643.jpg");
   background-repeat: repeat-y;
   background-position: bottom;
   background-size: cover;
 
   border: solid 3px rgb(0, 238, 255); 
+  box-shadow: 5px 2px 15px rgb(255, 0, 212)
 }
 
 div .header-section .Typewriter {
     margin: 10% auto 3%;
     color: #fff;
-    text-shadow:1px 1px 10px rgb(255, 0, 212), 1px 1px 10px rgb(255, 0, 212);
+    text-shadow:1px 1px 10px rgba(0, 238, 255), 1px 1px 10px rgb(0, 238, 255);
     font-size: 7rem !important;
     font-family: 'Cairo', sans-serif;
     z-index: 100;
-    background-color: !important;
 }
 
 .header-links-div {
@@ -114,9 +111,7 @@ div .header-section .Typewriter {
 .about-row.row{
   max-width: 80% !important;
   margin: 2% auto;
-  border: solid 3px rgb(0, 238, 255);
-  box-shadow: 2px 3px 10px 2px rgb(0, 0, 0);
-  background: rgba(24, 24, 24, 0.9);
+  /* border: solid 3px rgb(0, 238, 255); */
 }
 
 .about-col {
@@ -197,37 +192,32 @@ div .header-section .Typewriter {
 
 
 /* Projects Page Styles */
-.container.projects-container {
-  min-width: 100% !important;
-  padding: 0;
-  margin-bottom: 3%;
+
+.project-row {
+  width: 95%;
+  margin: 2% auto;
 }
 
-.projects-row {
-  width: 80%;
-  margin: 0 auto;
-  padding:  0;
-  justify-content: space-between !important;
-  height: auto;
-  /* background-color: rgba(24, 24, 24, 0.9) !important; */
+.project-col-1 {
+  width: 50% !important;
 }
 
-
-.projects-col {
-  flex-direction: column;
-  padding-top: 2%;
-  flex-direction: row;
-  border: solid 2px palegreen;
+.project-col-2 {
+  padding: 2% 0;
+  text-align: center;
+  width: 50% !important;
 }
-
 
 .project-btn {
   margin: 0 auto;
-  padding: 1% 2%;
-  background-color: rgb(0, 73, 78) !important;
-  border: solid 3px rgb(0, 238, 255) !important;
+  padding: 2% 4% !important;
+  background-color:  transparent !important;
+  color: #fff !important;
+  border-image: linear-gradient(rgb(0, 238, 255), rgb(255, 0, 212)) 20 !important;
+  border-width: 3px !important;
+  border-style: solid;
   box-shadow: 2px 3px 10px 2px rgb(0, 0, 0);
-  font-size: 1.5rem !important;
+  font-size: 1.75rem !important;
 }
 
 .project-btn:focus,
@@ -236,23 +226,8 @@ div .header-section .Typewriter {
   box-shadow: none;
 }
 
-.project-card {
-  border-radius: 5px;
-  border: solid 4px rgb(0, 238, 255) !important;
-  background-color: rgba(24, 24, 24, 0.9) !important;
-}
-
-
-.card {
-  width: 80%;
-  border: solid 2px black;
-  border-radius: 10px;
-  box-shadow: 3px 5px 10px 2px rgb(0, 0, 0);
-  background: transparent;
-}
-
- .carousel {
-  width: 900px;
+.carousel {
+  width: 100%;
   height: 460px;
   margin: auto;
 
@@ -261,10 +236,14 @@ div .header-section .Typewriter {
   align-items: center;
 } 
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  height: 3rem !important;
-  color: rgb(0, 238, 255) !important;
+.project-image {
+  margin: 0 auto;
+  max-width: 60% !important;
+}
+
+.project-image-sm {
+  margin: 0 auto;
+  max-width: 70% !important;
 }
 
 .carousel-control-next-icon {
@@ -274,19 +253,40 @@ div .header-section .Typewriter {
 
 .carousel-control-prev-icon {
   background-image: url("./images/left-arrow.png") !important;
-
 }
 
-.project-image {
+
+.project-card-header {
+  width: 30%;
   margin: 0 auto;
-  max-width: 50% !important;
 }
 
-.project-image-small {
-  margin: auto;
-  max-width: 80% !important;
+.project-card-headerlg {
+  width: 60%;
 }
 
+.project-card-links {
+  justify-content: space-between;
+  margin: 2% auto;
+  width: 25%;
+}
+
+.project-card-linkslg {
+  width: 12%;
+}
+
+.project-card-links-sm{
+  width: 30%;
+}
+
+.project-card-header-lg {
+  width: 60%;
+}
+
+.project-link {
+  font-size: 1.75rem;
+  color: rgb(0, 238, 255);
+}
 .project-title {
   font-size: 2rem !important;
   margin-bottom: 2% !important;
@@ -307,8 +307,6 @@ div .header-section .Typewriter {
 .project-card-li {
   font-size: 1.25rem !important;
 }
-
-
 .project-card-list {
   border: none !important;
   text-decoration: none !important;
@@ -323,48 +321,6 @@ div .header-section .Typewriter {
   padding: 0% 0% 1% 0% !important;
 }
 
-.project-card-links {
-  width: 15%;
-  justify-content: space-between;
-}
-
-.project-link {
-  font-size: 3rem;
-  color: rgb(0, 238, 255);
-}
-
-
-/* Test Project Styles */
-.tproject-row {
-  width: 95%;
-  margin: 2% auto;
-  border: solid 3px rgb(0, 238, 255);
-  background-color: rgba(24, 24, 24, 0.9) !important;
-}
-
-.tproject-col-1 {
-  width: 40% !important;
-}
-
-.tproject-col-2 {
-  text-align: center;
-  width: 60% !important;
-}
-
-
-.tproject-carousel {
-  width: 100%;
-  margin: auto;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.tproject-image {
-  margin: 0 auto;
-  max-width: 70% !important;
-}
 /* Default Styles */
 .App {
   text-align: center;

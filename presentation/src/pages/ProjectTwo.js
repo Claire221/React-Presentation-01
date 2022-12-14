@@ -29,6 +29,10 @@ import project3Image3 from "../images/ATA-03.jpg"
 import project3Image4 from "../images/ATA-04.jpg"
 
 export default function Project2() {
+    const [project1, showProject1] = useState(null)
+    const [project2, showProject2] = useState(null)
+    const [project3, showProject3] = useState(null)
+
     const [index, setIndex] = useState(0);
 
     const handleSelect = (selectedIndex, e) => {
@@ -47,44 +51,53 @@ export default function Project2() {
                         variants={{
                             visible: { opacity: 1, scale: 1 },
                             hidden: { opacity: 0, scale: 0 } }}
-                        className="flex tproject-row">
+                        className="flex project-row card-styles">
 
-                        <div className="tproject-col-1">
-                            <Carousel activeIndex={index} onSelect={handleSelect} interval={null} className="tproject-carousel">
-                               <Carousel.Item>
-                                   <img
-                                   className="d-block tproject-image"
-                                   src={project1Image1}
-                                   alt="First slide"
-                                   />
-                               </Carousel.Item>
-                               <Carousel.Item>
-                                   <img
-                                   className="d-block tproject-image"
-                                   src={project1Image2}
-                                   alt="Second slide"
-                                   />
-                               </Carousel.Item>
-                               <Carousel.Item>
-                                   <img
-                                   className="d-block tproject-image"
-                                   src={project1Image3}
-                                   alt="Third slide"
-                                   />
-                               </Carousel.Item>
-                               <Carousel.Item>
-                                   <img
-                                   className="d-block tproject-image"
-                                   src={project1Image3}
-                                   alt="Fourth slide"
-                                   />
-                               </Carousel.Item>
-                           </Carousel>
+                        <div className="project-col-1">
+                        <Col className="flex projects-col"><Button onClick={() => showProject1(!project1)} className="my-4 project-btn">View Images</Button></Col>
+                            {
+                                project1?<Carousel activeIndex={index} onSelect={handleSelect} interval={null} className="project-carousel">
+                                    <Carousel.Item>
+                                        <img
+                                        className="d-block project-image-sm"
+                                        src={project1Image1}
+                                        alt="First slide"
+                                        />
+                                    </Carousel.Item>
+                                    <Carousel.Item>
+                                        <img
+                                        className="d-block project-image"
+                                        src={project1Image2}
+                                        alt="Second slide"
+                                        />
+                                    </Carousel.Item>
+                                    <Carousel.Item>
+                                        <img
+                                        className="d-block project-image"
+                                        src={project1Image3}
+                                        alt="Third slide"
+                                        />
+                                    </Carousel.Item>
+                                    <Carousel.Item>
+                                        <img
+                                        className="d-block project-image"
+                                        src={project1Image3}
+                                        alt="Fourth slide"
+                                        />
+                                    </Carousel.Item>
+                                </Carousel>: null
+                            }
                         </div>
 
-                        <div className="tproject-col-2">
-                            <h3 className="project-title">Facility 443</h3>
-                           
+                        <div className="project-col-2">
+                            <div className="flex project-card-header project-card-header-sm">
+                                <h3 className="project-title">Facility 443</h3>
+                                <div className="project-card-links flex">
+                                    <FontAwesomeIcon icon={faGithub} className="project-link"/>
+                                    <FontAwesomeIcon icon={faDisplay} className="project-link"/>
+                                </div>
+                            </div>
+
                            <h4 className="project-text"><span className="project-sub-title">Project Brief: </span>Create a website that includes an interactive JavaScript element.</h4>
 
                            <h4 className="project-text"><span className="project-sub-title">Languages Used: </span>HTML, CSS, JavaScript</h4>
@@ -99,11 +112,6 @@ export default function Project2() {
                            </ListGroup>
                            
                            <h4 className="project-text"><span className="project-sub-title">Project Difficulties: </span>Button click events were bubbling</h4>
-                           
-                           <div className="project-card-links flex">
-                               <FontAwesomeIcon icon={faGithub} className="project-link"/>
-                               <FontAwesomeIcon icon={faDisplay} className="project-link"/>
-                           </div>
                         </div>
                     </motion.div>
 
@@ -115,63 +123,149 @@ export default function Project2() {
                         variants={{
                             visible: { opacity: 1, scale: 1 },
                             hidden: { opacity: 0, scale: 0 } }}
-                        className="flex tproject-row">
+                        className="flex project-row card-styles">
 
-                        <div className="tproject-col-1">
-                            <Carousel activeIndex={index} onSelect={handleSelect} interval={null} className="tproject-carousel">
-                               <Carousel.Item>
-                                   <img
-                                   className="d-block tproject-image"
-                                   src={project2Image1}
-                                   alt="First slide"
-                                   />
-                               </Carousel.Item>
-                               <Carousel.Item>
-                                   <img
-                                   className="d-block tproject-image"
-                                   src={project2Image2}
-                                   alt="Second slide"
-                                   />
-                               </Carousel.Item>
-                               <Carousel.Item>
-                                   <img
-                                   className="d-block tproject-image"
-                                   src={project2Image3}
-                                   alt="Third slide"
-                                   />
-                               </Carousel.Item>
-                               <Carousel.Item>
-                                   <img
-                                   className="d-block tproject-image"
-                                   src={project2Image3}
-                                   alt="Fourth slide"
-                                   />
-                               </Carousel.Item>
-                           </Carousel>
+                        <div className="project-col-1">
+                            <Col className="flex">
+                                <Button onClick={() => showProject2(!project2)} className="my-4 project-btn">View Images</Button>
+                            </Col>
+                                {
+                                    project2?<Carousel activeIndex={index} onSelect={handleSelect} interval={null} className="project-carousel">
+                                        <Carousel.Item>
+                                            <img
+                                            className="d-block project-image-sm"
+                                            src={project2Image1}
+                                            alt="First slide"
+                                            />
+                                        </Carousel.Item>
+                                        <Carousel.Item>
+                                            <img
+                                            className="d-block project-image-sm"
+                                            src={project2Image2}
+                                            alt="Second slide"
+                                            />
+                                        </Carousel.Item>
+                                        <Carousel.Item>
+                                            <img
+                                            className="d-block project-image-sm"
+                                            src={project2Image3}
+                                            alt="Third slide"
+                                            />
+                                        </Carousel.Item>
+                                        <Carousel.Item>
+                                            <img
+                                            className="d-block project-image-sm"
+                                            src={project2Image4}
+                                            alt="Fourth slide"
+                                            />
+                                        </Carousel.Item>
+                                    </Carousel>: null
+                                }
                         </div>
 
-                        <div className="tproject-col-2">
-                            <h3 className="project-title">Facility 443</h3>
+                        <div className="project-col-2">
+                        <div className="flex project-card-header  project-card-header-sm">
+                                <h3 className="project-title">Bookmarked</h3>
+                                <div className="project-card-links flex">
+                                    <FontAwesomeIcon icon={faGithub} className="project-link"/>
+                                    <FontAwesomeIcon icon={faDisplay} className="project-link"/>
+                                </div>
+                            </div>
                            
-                           <h4 className="project-text"><span className="project-sub-title">Project Brief: </span>Create a website that includes an interactive JavaScript element.</h4>
+                           <h4 className="project-text"><span className="project-sub-title">Project Brief: </span>Create an application that has CRUD functionality</h4>
 
-                           <h4 className="project-text"><span className="project-sub-title">Languages Used: </span>HTML, CSS, JavaScript</h4>
+                           <h4 className="project-text"><span className="project-sub-title">Languages Used: </span>HTML, CSS, Python, Flask, Jinja, MongoDB, PostgreSQL, Heroku</h4>
 
                            <h4 className="project-sub-title">Project features</h4>
                            <ListGroup variant="flush" className="project-card-list">
-                               <ListGroup.Item className="project-card-li">Background Music</ListGroup.Item>
-                               <ListGroup.Item className="project-card-li">Sound Effects</ListGroup.Item>
-                               <ListGroup.Item className="project-card-li">Interactive Storyline</ListGroup.Item>
-                               <ListGroup.Item className="project-card-li">Visual Inventory System</ListGroup.Item>
-                               <ListGroup.Item className="project-card-li">Checkpoint Systems</ListGroup.Item>
+                           <ListGroup.Item className="project-card-li">Account Creation</ListGroup.Item>
+                               <ListGroup.Item className="project-card-li">Login and Logout</ListGroup.Item>
+                               <ListGroup.Item className="project-card-li">Create and Delete Bookshelves</ListGroup.Item>
+                               <ListGroup.Item className="project-card-li">Create, Edit and Delete Books</ListGroup.Item>
+                               <ListGroup.Item className="project-card-li">Assign Books to Bookshelves</ListGroup.Item>
+                               <ListGroup.Item className="project-card-li">Book Search</ListGroup.Item>
+                               <ListGroup.Item className="project-card-li">Book Generation</ListGroup.Item>
                            </ListGroup>
                            
                            <h4 className="project-text"><span className="project-sub-title">Project Difficulties: </span>Button click events were bubbling</h4>
+                        </div>
+                    </motion.div>
+
+                    <motion.div
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.3 }}
+                        variants={{
+                            visible: { opacity: 1, scale: 1 },
+                            hidden: { opacity: 0, scale: 0 } }}
+                        className="flex project-row card-styles">
+
+                        <div className="project-col-1">
+                        <Col className="flex projects-col">
+                            <Button onClick={() => showProject3(!project3)} className="my-4 project-btn">View Images</Button>
+                        </Col>
+                            {
+                                project3?<Carousel activeIndex={index} onSelect={handleSelect} interval={null} className="project-carousel">
+                                    <Carousel.Item>
+                                        <img
+                                        className="d-block project-image-sm"
+                                        src={project3Image1}
+                                        alt="First slide"
+                                        />
+                                    </Carousel.Item>
+                                    <Carousel.Item>
+                                        <img
+                                        className="d-block project-image-sm"
+                                        src={project3Image2}
+                                        alt="Second slide"
+                                        />
+                                    </Carousel.Item>
+                                    <Carousel.Item>
+                                        <img
+                                        className="d-block project-image-sm"
+                                        src={project3Image3}
+                                        alt="Third slide"
+                                        />
+                                    </Carousel.Item>
+                                    <Carousel.Item>
+                                        <img
+                                        className="d-block project-image-sm"
+                                        src={project3Image4}
+                                        alt="Fourth slide"
+                                        />
+                                    </Carousel.Item>
+                                </Carousel>: null
+                            }
+                            
+                        </div>
+
+                        <div className="project-col-2">
+                            <div className="flex project-card-header project-card-header-lg">
+                                <h3 className="project-title">Across the Ages - Project Ongoing </h3>
+                                <div className="project-card-links project-card-linkslg flex">
+                                    <FontAwesomeIcon icon={faGithub} className="project-link"/>
+                                    <FontAwesomeIcon icon={faDisplay} className="project-link"/>
+                                </div>
+                            </div>
+                            
                            
-                           <div className="project-card-links flex">
-                               <FontAwesomeIcon icon={faGithub} className="project-link"/>
-                               <FontAwesomeIcon icon={faDisplay} className="project-link"/>
-                           </div>
+                           <h4 className="project-text"><span className="project-sub-title">Project Brief: </span>Create an E-Commerce website with payment functionality</h4>
+
+                           <h4 className="project-text"><span className="project-sub-title">Languages Used: </span>HTML, CSS, Python, Django, Stripe</h4>
+
+                           <h4 className="project-sub-title">Project features</h4>
+                           <ListGroup variant="flush" className="project-card-list">
+                           <ListGroup.Item className="project-card-li">Login and Out Features</ListGroup.Item>
+                               <ListGroup.Item className="project-card-li">Prodcut Search</ListGroup.Item>
+                               <ListGroup.Item className="project-card-li">Product Display</ListGroup.Item>
+                               <ListGroup.Item className="project-card-li">You might also like</ListGroup.Item>
+                               <ListGroup.Item className="project-card-li">Add to Basket</ListGroup.Item>
+                               <ListGroup.Item className="project-card-li">Checkout</ListGroup.Item>
+                           </ListGroup>
+                           
+                           <h4 className="project-text"><span className="project-sub-title">Project Difficulties: </span>Button click events were bubbling</h4>
+                        
                         </div>
                     </motion.div>
         </section>    

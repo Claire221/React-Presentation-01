@@ -45,15 +45,15 @@ export default function ProjectTwo() {
 
             <Container className="flex container projects-container">
                 <h1 className="section-title">Projects</h1>
-                <Row className="flex projects-row ">
+                <Row className="flex projects-row projects-btn-row ">
                     <Col className="flex projects-col"><Button onClick={() => showProject1(!project1)} className="my-4 project-btn">Facility 443</Button></Col>
                     <Col className="flex projects-col"><Button onClick={() => showProject2(!project2)} className="my-4 project-btn">Bookmarked</Button></Col>
                     <Col className="flex projects-col"><Button onClick={() => showProject3(!project3)} className="my-4 project-btn">Across The Ages</Button></Col>
                 </Row>
                 <Row className="flex projects-row project-cards-row">
-                    <Col className="flex projects-col">
+                    <Col className="flex projects-info-col">
                         {
-                           project1?<Card className="project-card">
+                           project1?<Card className="project-card flex">
                             <Carousel activeIndex={index} onSelect={handleSelect} interval={null}>
                                <Carousel.Item>
                                    <img
@@ -79,13 +79,13 @@ export default function ProjectTwo() {
                                <Carousel.Item>
                                    <img
                                    className="d-block project-image"
-                                   src={project1Image3}
+                                   src={project1Image4}
                                    alt="Fourth slide"
                                    />
                                </Carousel.Item>
                            </Carousel>
                            <Card.Body>
-                           <Card.Title className="project-title">Facility 443</Card.Title>
+                           <Card.Title className="project-title">Facility 443 </Card.Title>
                            
                            <Card.Title className="project-text"><span className="project-sub-title">Project Brief: </span>Create a website that includes an interactive JavaScript element.</Card.Title>
 
@@ -152,8 +152,9 @@ export default function ProjectTwo() {
 
                            <Card.Title className="project-text"><span className="project-sub-title">Languages Used: </span>HTML, CSS, Python, Flask, Jinja, MongoDB, PostgreSQL, Heroku</Card.Title>
 
-                           <Card.Title className="project-sub-title">Project features</Card.Title>
-                           <ListGroup variant="flush" className="project-card-list">
+                           <Card.Title className="project-text"><span className="project-sub-title">Project features</span>Account Creation, Login and Logout, Create and Delete Bookshelves, Create, Edit and Delete Books, Assign Books to Bookshelves, Book Search, Book Generation</Card.Title>
+                           
+                           {/* <ListGroup variant="flush" className="project-card-list">
                                <ListGroup.Item className="project-card-li">Account Creation</ListGroup.Item>
                                <ListGroup.Item className="project-card-li">Login and Logout</ListGroup.Item>
                                <ListGroup.Item className="project-card-li">Create and Delete Bookshelves</ListGroup.Item>
@@ -161,7 +162,7 @@ export default function ProjectTwo() {
                                <ListGroup.Item className="project-card-li">Assign Books to Bookshelves</ListGroup.Item>
                                <ListGroup.Item className="project-card-li">Book Search</ListGroup.Item>
                                <ListGroup.Item className="project-card-li">Book Generation</ListGroup.Item>
-                           </ListGroup>
+                           </ListGroup> */}
                            
                            <Card.Title className="project-text"><span className="project-sub-title">Project Difficulties: </span></Card.Title>
                            
