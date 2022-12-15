@@ -17,7 +17,7 @@ export default function About() {
                         initial="hidden"
                         whileInView="visible"
                         viewport={{ once: true }}
-                        transition={{ duration: 0.3 }}
+                        transition={{ ease: "easeOut", duration: 0.6 }}
                         variants={{
                             visible: { opacity: 1, scale: 1 },
                             hidden: { opacity: 0, scale: 0 } }}
@@ -44,7 +44,7 @@ export default function About() {
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true }}
-                     transition={{ duration: 0.3 }}
+                     transition={{ duration: 0.6 }}
                     variants={{
                         visible: { opacity: 1, scale: 1 },
                         hidden: { opacity: 0, scale: 0 } }}
@@ -71,7 +71,7 @@ export default function About() {
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true }}
-                    transition={{ duration: 0.3 }}
+                    transition={{ duration: 0.6 }}
                     variants={{
                         visible: { opacity: 1, scale: 1 },
                         hidden: { opacity: 0, scale: 0 } }}

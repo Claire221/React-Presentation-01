@@ -4,7 +4,7 @@ import { useState } from 'react'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faHtml5, faCss3, faJs, faPython, faReact, faBootstrap } from '@fortawesome/free-brands-svg-icons'
-import { faH, faDatabase, faPepperHot, faM} from '@fortawesome/free-solid-svg-icons'
+import { faH, faDatabase, faPepperHot, faM, faD} from '@fortawesome/free-solid-svg-icons'
 
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -20,7 +20,7 @@ export default function Skills() {
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true }}
-                    transition={{ duration: 0.3 }}
+                    transition={{ duration: 0.6 }}
                     variants={{
                         visible: { opacity: 1, scale: 1 },
                         hidden: { opacity: 0, scale: 0 } }}
@@ -48,6 +48,7 @@ export default function Skills() {
                                         <li className="skills-div-li">Jinja <FontAwesomeIcon icon={faGithub} className="skill-icon"/></li>
                                         <li className="skills-div-li">React <FontAwesomeIcon icon={faReact} className="skill-icon"/></li>
                                         <li className="skills-div-li">Flask <FontAwesomeIcon icon={faPepperHot} className="skill-icon"/></li>
+                                        <li className="skills-div-li">Django <FontAwesomeIcon icon={faD} className="skill-icon"/></li>
                                         <li className="skills-div-li">Bootstrap <FontAwesomeIcon icon={faBootstrap} className="skill-icon"/></li>
                                         <li className="skills-div-li">Materialize <FontAwesomeIcon icon={faM} className="skill-icon"/></li>
                                     </ul>

@@ -148,7 +148,7 @@ div .header-section .Typewriter {
 
 .about-image {
   margin: 0 auto;
-  width: 80%;
+  width: 70%;
   box-shadow: 0px 0px 10px 2px rgb(172, 0, 143);
   border: solid 4px rgb(255, 0, 212);
 }
@@ -164,7 +164,7 @@ div .header-section .Typewriter {
 
 .about-div-li {
   list-style: none;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   padding: 0;
   margin: 2% 0;
 }
