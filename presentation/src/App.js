@@ -7,7 +7,6 @@ import About from './pages/About';
 import Projects from './pages/Projects';
 import ProjectTwo from './pages/ProjectTwo';
 import Skills from './pages/Skills';
-import ProjectCards from './pages/ProjectCards';
 import {Route, Routes} from "react-router-dom"
 
 function App() {
