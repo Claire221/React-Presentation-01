@@ -7,7 +7,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 export default function Header() {
-
     return (
         <motion.div
             initial="hidden"
@@ -25,15 +24,10 @@ export default function Header() {
                     .pauseFor(1000)
                     .deleteAll()
                     .typeString("Your next Junior Developer")
+                    .pauseFor(1000)
                     .start();
                 }}
-                
             />
-            <div className="header-links-div flex">
-                <FontAwesomeIcon icon={faGithub} className="header-link"/>
-                <FontAwesomeIcon icon={faLinkedin} className="header-link"/>
-            </div>
-
         </motion.div>
     );
 }

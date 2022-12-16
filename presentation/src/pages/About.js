@@ -86,6 +86,8 @@ export default function About() {
                                 <ul className="about-div-ul">
                                     <li className="about-div-li">Enrolled in coding bootcamp</li>
                                     <li className="about-div-li">Left my job to persue it full time</li>
+                                    <li className="about-div-li">Developed my existing skills and learnt new languages</li>
+                                    <li className="about-div-li">Hoping to finish in January</li>
                                 </ul>
                             </div>
                         </Col>

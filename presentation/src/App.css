@@ -1,3 +1,4 @@
+@import "~react-image-gallery/styles/css/image-gallery.css";
 /* Custom Styles */
 /* Google Fonts Imports  */
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@700&family=Raleway:wght@500&family=Roboto:wght@300;400&family=Teko&display=swap');
@@ -5,7 +6,7 @@
 /* Universal Styles */
 body {
   background-image: linear-gradient(to bottom, rgba(24, 24, 24, 0.5), rgba(24, 24, 24, 0.5)),
-    url("https://wallpaperaccess.com/full/5118543.jpg");
+    url("./images/Background.jpg");
   background-repeat: repeat-y;
   background-position: bottom;
   background-size: 100%;
@@ -32,6 +33,7 @@ body {
   font-family: 'Roboto', sans-serif;
   color: #fff;
   margin: 10% 0;
+  box-shadow: 3px 5px 10px rgb(0, 0, 0);
 }
 
 .section-title {
@@ -76,7 +78,7 @@ body {
 }
 
 div .header-section .Typewriter {
-    margin: 10% auto 3%;
+    margin: 15% auto 3%;
     color: #fff;
     text-shadow:1px 1px 10px rgba(0, 238, 255), 1px 1px 10px rgb(0, 238, 255);
     font-size: 7rem !important;
@@ -112,11 +114,9 @@ div .header-section .Typewriter {
 .about-row.row{
   max-width: 80% !important;
   margin: 2% auto;
-  /* border: solid 3px rgb(0, 238, 255); */
 }
 
 .about-col {
-  /* border: solid 3px rgb(0, 238, 255); */
   padding: 0 !important;
 }
 
@@ -138,14 +138,6 @@ div .header-section .Typewriter {
   color: #fff;
 }
 
-/* .about-content-left {
-  background: linear-gradient(135deg, rgba(0, 238, 255, 0.2) 0%, rgba(0, 238, 255, 0.2) 61%, rgba(24, 24, 24, 0.5) 61%, rgba(24, 24, 24, 0.5) 100%);
-}
-
-.about-content-right {
-  background: linear-gradient(135deg, rgba(24, 24, 24, 0.5) 0%, rgba(24, 24, 24, 0.5) 61%, rgb(0, 238, 255) 61%, rgb(0, 238, 255) 100%);
-} */
-
 .about-image {
   margin: 0 auto;
   width: 70%;
@@ -156,6 +148,8 @@ div .header-section .Typewriter {
 .about-div-title {
   font-size: 2.5rem;
   margin: 2% auto;
+  border-bottom: 2px solid rgb(255, 0, 212);
+  box-shadow: 0px 15px 10px -15px rgb(255, 0, 212);    
 }
 
 .about-div-ul {
@@ -172,7 +166,7 @@ div .header-section .Typewriter {
 /* Skills Page Styles */
 .skills-container.container {
   margin: 0 auto;
-  padding: 10% 0 20%;
+  padding: 10% 0%;
   min-width: 100% !important;
 }
 
@@ -186,16 +180,16 @@ div .header-section .Typewriter {
 
 .skills-card {
   margin-top: 10%;
-  background-color: transparent !important;
   box-shadow: 0px 0px 10px 2px #0ff;
   height: 450px !important;
   background-color: rgba(24, 24, 24, 1) !important;
+  border: solid 4px #fff !important;
 }
 
 .skills-card-title {
   width: 100%;
-  /* padding: 5% 0 !important; */
-  background-color: rgba(0, 238, 255,0.3) !important;
+  border-bottom: 2px solid rgb(255, 0, 212);
+  box-shadow: 0px 15px 10px -15px rgb(255, 0, 212);   
 } 
 
 .skills-div-ul {
@@ -240,24 +234,22 @@ div .header-section .Typewriter {
   box-shadow: none;
 }
 
-.carousel {
-  width: 100%;
-  height: 460px;
-  margin: auto;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} 
-
-.project-image {
-  margin: 0 auto;
-  max-width: 60% !important;
+/* React image gallery styles */
+.image-gallery-svg {
+  height: 70px  !important;
 }
 
-.project-image-sm {
-  margin: 0 auto;
-  max-width: 70% !important;
+img.image-gallery-image {
+  width: 70% !important;
+  margin: 2%;
+  border: solid 5px rgb(0, 238, 255);
+  box-shadow: 2px 3px 10px 2px rgb(0, 0, 0);
+}
+
+.image-gallery-play-button,
+.image-gallery-fullscreen-button   {
+  display: none !important; 
 }
 
 .carousel-control-next-icon {
