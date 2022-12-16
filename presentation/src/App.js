@@ -5,7 +5,6 @@ import Navbar from './components/NavBar';
 import Header from './pages/Header';
 import About from './pages/About';
 import Projects from './pages/Projects';
-import ProjectTwo from './pages/ProjectTwo';
 import Skills from './pages/Skills';
 import {Route, Routes} from "react-router-dom"
 
@@ -16,7 +15,7 @@ function App() {
       <Header/>
       <About/>
       <Skills/>
-      <ProjectTwo/>
+      <Projects/>
       <div className="container">
           {/* <Routes>
             <Route path="/about" element ={<About />}/>

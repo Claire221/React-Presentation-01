@@ -6,7 +6,7 @@
 /* Universal Styles */
 body {
   background-image: linear-gradient(to bottom, rgba(24, 24, 24, 0.5), rgba(24, 24, 24, 0.5)),
-    url("./images/Background.jpg");
+    url("./images/background.jpg");
   background-repeat: repeat-y;
   background-position: bottom;
   background-size: 100%;
@@ -201,6 +201,11 @@ div .header-section .Typewriter {
 }
 
 /* Projects Page Styles */
+.project-section {
+  padding-bottom: 5% !important;
+  margin-bottom: 2% !important;
+}
+
 .project-row {
   width: 95%;
   margin: 2% auto;
