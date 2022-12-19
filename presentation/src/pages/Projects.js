@@ -84,8 +84,6 @@ export default function Projects() {
                                <ListGroup.Item className="project-card-li">Visual Inventory System</ListGroup.Item>
                                <ListGroup.Item className="project-card-li">Checkpoint Systems</ListGroup.Item>
                            </ListGroup>
-                           
-                           <h4 className="project-text"><span className="project-sub-title">Project Difficulties: </span>Button click events were bubbling</h4>
                         </div>
                     </motion.div>
 
@@ -136,7 +134,6 @@ export default function Projects() {
                                <ListGroup.Item className="project-card-li">Book Generation</ListGroup.Item>
                            </ListGroup>
                            
-                           <h4 className="project-text"><span className="project-sub-title">Project Difficulties: </span>Button click events were bubbling</h4>
                         </div>
                     </motion.div>
 
@@ -187,8 +184,6 @@ export default function Projects() {
                                <ListGroup.Item className="project-card-li">Add to Basket</ListGroup.Item>
                                <ListGroup.Item className="project-card-li">Checkout</ListGroup.Item>
                            </ListGroup>
-                           
-                           <h4 className="project-text"><span className="project-sub-title">Project Difficulties: </span>Button click events were bubbling</h4>
                         
                         </div>
                     </motion.div>
