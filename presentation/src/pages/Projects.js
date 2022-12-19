@@ -119,7 +119,7 @@ export default function Projects() {
                                 </div>
                             </div>
                            
-                           <h4 className="project-text"><span className="project-sub-title">Project Brief: </span>Create an application that has CRUD functionality</h4>
+                           <h4 className="project-text"><span className="project-sub-title">Project Brief: </span>Create an application that has CRUD functionality that uses a relational database</h4>
 
                            <h4 className="project-text"><span className="project-sub-title">Languages Used: </span>HTML, CSS, Python, Flask, Jinja, MongoDB, PostgreSQL, Heroku</h4>
 
