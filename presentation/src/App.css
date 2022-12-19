@@ -1,7 +1,10 @@
+/* React Image Gallery Styles */
 @import "~react-image-gallery/styles/css/image-gallery.css";
-/* Custom Styles */
+
 /* Google Fonts Imports  */
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@700&family=Raleway:wght@500&family=Roboto:wght@300;400&family=Teko&display=swap');
+
+/* Custom Styles */
 
 /* Universal Styles */
 body {
@@ -10,9 +13,7 @@ body {
   background-repeat: repeat-y;
   background-position: bottom;
   background-size: 100%;
-  /* background: linear-gradient(200deg, black 80%,  rgba(0, 238, 250, .5) 100%); */
   height: 100% !important;
-  /* url("https://wallpaperaccess.com/full/4174801.jpg"); */
 }
 
 .container {
