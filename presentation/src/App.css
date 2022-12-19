@@ -365,6 +365,7 @@ img.image-gallery-image {
     width: 50%;
   }
 
+
 }
 
 
@@ -377,4 +378,14 @@ img.image-gallery-image {
   .header-links-div {
     width: 20%;
   }
+
+  .project-row {
+    flex-direction: column;
+  }
+
+  .project-col-1,
+  .project-col-2 {
+    width: 90% !important;
+  }
+  
 }

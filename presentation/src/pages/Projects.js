@@ -148,9 +148,9 @@ export default function Projects() {
                         className="flex project-row card-styles">
 
                         <div className="project-col-1">
-                        <Col className="flex projects-col">
-                            <Button onClick={() => showProject3(!project3)} className="my-4 project-btn">View Images</Button>
-                        </Col>
+                            <Col className="flex projects-col">
+                                <Button onClick={() => showProject3(!project3)} className="my-4 project-btn">View Images</Button>
+                            </Col>
                             {
                                 project3?<ImageGallery items={Project3Images} />: null
                             }
